@@ -251,7 +251,7 @@
 			{
 				display: block;
 				width: 100%;
-				height:auto;/*######> Added to fix image map response 5/21/15 <######*/
+				height:auto;/*######> Added to fix image map response vertical resize 5/21/15 <######*/
 			}
 			
 			.image.left
@@ -528,11 +528,27 @@
 /**********************************************************************************/
 /* 						Google Map Canvas added 4/28/15							  */	
 /**********************************************************************************/		
-	#map-canvas
+	/*#map-canvas
 	{
-		width: 880px;
-		height: 1400px;
-	}	
+		width: 960;
+		height: 1400;
+	}*/
+
+
+
+	.google-maps {
+        position: relative;
+        padding-bottom: 150%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
 
 /*********************************************************************************/
 /* 										Header                                   */

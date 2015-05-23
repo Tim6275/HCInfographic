@@ -11,5 +11,10 @@
 	#banner
 	{
 		padding: 4em 0 4em 0;
-		background-size:		auto,								175% auto;
+		background-size:cover;		/*auto,								175% auto;*/
+	}
+	
+	body,input,textarea,select
+	{
+		font-size: 14pt;/* Added 5/22/15*/
 	}
